@@ -9,3 +9,4 @@
     npm run build:css
     npm run start:dev
 ``` 
+3. Откройте в браузере страницу http://localhost:8080
