@@ -1,0 +1,28 @@
+.suggest {
+  position: relative;
+
+  .suggest__input {
+    font-size: 20pt;
+  }
+
+  .suggest__list {
+    display: none;
+    border: 1px solid #cccccc;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    font-size: 20pt;
+
+    &.suggest__list_show {
+      display: block;
+    }
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #cccccc;
+      }
+    }
+  }
+}

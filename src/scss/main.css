@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.suggest {
+  position: relative;
+}
+.suggest .suggest__input {
+  font-size: 20pt;
+}
+.suggest .suggest__list {
+  display: none;
+  border: 1px solid #cccccc;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  font-size: 20pt;
+}
+.suggest .suggest__list.suggest__list_show {
+  display: block;
+}
+.suggest .suggest__list li {
+  cursor: pointer;
+}
+.suggest .suggest__list li:hover {
+  background-color: #cccccc;
+}
+
+/*# sourceMappingURL=main.css.map */
