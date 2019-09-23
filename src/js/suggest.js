@@ -1,14 +1,18 @@
 'use strict';
 
 class Suggest {
-    constructor(root_selector, data) {
+    constructor(root_selector, dataCallback) {
         this.selector_input = '.suggest__input';
         this.selector_list = '.suggest__list';
         this.class_list_show = 'suggest__list_show';
 
         this.$input = $(root_selector).find(this.selector_input);
         this.$list = $(root_selector).find(this.selector_list);
-        this.data = data;
+
+        this.data = [];
+        dataCallback((data) => {
+            this.data = data;
+        });
 
         this.$input.keyup(() => this.filterInput());
     }

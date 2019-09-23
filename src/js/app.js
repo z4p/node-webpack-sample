@@ -7,5 +7,9 @@ window.$ = $;
 
 // init Suggest on DOM loaded
 $(function(){
-    const s = new Suggest('#suggestFriuts', ['banana','orange','apple','grape','pine','pineapple']);
+    new Suggest('#suggestFriuts', (dataCallback) => {
+        $.getJSON('/json/fruits.json', {}, (data) => {
+            dataCallback(data);
+        });
+    });
 });
