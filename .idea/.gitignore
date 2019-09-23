@@ -1,0 +1,6 @@
+# Default ignored files
+/workspace.xml
+/node_modules/
+/public/js/
+/public/css/
+/.idea/
