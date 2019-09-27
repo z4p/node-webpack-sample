@@ -2,6 +2,7 @@ const path = require('path');
 
 
 module.exports = {
+    mode: 'development',
     entry: './src/js/app.js',
     output: {
         filename: 'app.js',
@@ -9,12 +10,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    'sass-loader'
-                ],
-            },
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,

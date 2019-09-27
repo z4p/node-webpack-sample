@@ -6,8 +6,7 @@
 2. В директории проекта выполните:
 ```
 npm install
-npm run build:css
-npx webpack
-npm run start:dev
+npm run build
+npm run start
 ``` 
 3. Откройте в браузере страницу http://localhost:8080

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass src/scss/main.scss:public/css/main.css",
-    "start:dev": "webpack-dev-server"
+    "build": "sass src/scss/main.scss:public/css/main.css && npx webpack",
+    "start": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
